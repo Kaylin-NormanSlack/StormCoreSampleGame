@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://d22eo2udihck1"]
+
+[ext_resource type="Texture2D" uid="uid://c5p4dld807vmt" path="res://icon.svg" id="1_rpqav"]
+[ext_resource type="Script" uid="uid://cibohngrc4ol5" path="res://scripts/Components/movement_component.gd" id="2_gntrk"]
+[ext_resource type="Script" uid="uid://bcgea8kw1cd7j" path="res://scripts/Components/gravity_component.gd" id="3_dewec"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kyqiw"]
+
+[node name="Player" type="CharacterBody2D" unique_id=1343828602]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1457969618]
+shape = SubResource("RectangleShape2D_kyqiw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=850360429]
+texture = ExtResource("1_rpqav")
+
+[node name="MovementComponent" type="Node" parent="." unique_id=9603531]
+script = ExtResource("2_gntrk")
+
+[node name="GravityComponent" type="Node" parent="." unique_id=1964641209]
+script = ExtResource("3_dewec")

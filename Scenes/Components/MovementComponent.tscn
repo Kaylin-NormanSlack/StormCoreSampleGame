@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dop7kr3w0v2da"]
+
+[ext_resource type="Script" uid="uid://bcgea8kw1cd7j" path="res://scripts/Components/gravity_component.gd" id="1_uph3v"]
+
+[node name="MovementComponent" type="Node2D" unique_id=295165080]
+script = ExtResource("1_uph3v")

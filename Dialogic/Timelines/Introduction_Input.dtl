@@ -1,0 +1,20 @@
+join Kaylin left
+Kaylin: Here we are. Our demo level.
+Kaylin: Oh... That's not good.
+Kaylin: The camera should definitely pointing at you... Actually...!
+Kaylin: This will be a perfect demonstration of how the system works.
+Kaylin: When the game booted, there were a number of busses that were registered to a global bus manager.
+Kaylin: The Camera bus, the Input bus, the Gravity bus and the Game bus. These busses are here to serve a specific purpose.
+Kaylin: There were also a few adapters that were registered - one for each plugin. That includes the Phantom Camera.
+Kaylin: Right now, the camera doesn't know where the player is or is directly linked to you. It's not registered as a global entity so it can't be called from anywhere like a regular singleton or god object can. The only way to interact with it is through emitting signals.
+Kaylin: So I'm going to send a the following signal that's a dictionary.
+Kaylin: The keys will be the "bus" key, which will be set to the CameraBus.
+
+Kaylin: The "type" key which will be "follow_target". This is the event being sent. 
+Kaylin: Lastly, the "target_group" which will be set to the player.
+
+Kaylin: The result will be that the camera should lock to the player!
+[signal arg_type="dict" arg="{"bus": "CameraBus", "type": "follow_target", "target_group": "player" }"]
+[wait time="3.0"]
+Kaylin:In this demo we only have one player, so it'll just be that player.\
+Kaylin: I'll enable movement the same way through the input bus so take a look around. Oh! and read any signs you come across, they'll have better tips on how to use this system!
